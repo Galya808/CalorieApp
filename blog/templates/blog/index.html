@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+{% block extra_style %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h4>Welcome to the Calorie Application. Here you can monitor the health by saving height and weight results. Register and enjoy! </h4>
+    <div>
+        <a href="{% url 'register' %}">Registration</a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+{% endblock %}

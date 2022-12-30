@@ -9,7 +9,7 @@ class Personal(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.username
+        return self.email
 
 
 class Data(models.Model):
